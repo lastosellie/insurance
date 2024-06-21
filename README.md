@@ -1,7 +1,7 @@
 # 
 
 ## Model
-www.msaez.io/#/52234918/storming/9c820c08db6cbd7f26a79c4f992e3e71
+www.msaez.io/#/52234918/storming/insurance
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
@@ -22,6 +22,7 @@ See the README.md files inside the each microservices directory:
 
 - claim
 - review
+- pay
 
 
 ## Run API Gateway (Spring Gateway)
@@ -38,6 +39,10 @@ mvn spring-boot:run
 - review
 ```
  http :8088/reviews id="id" 
+```
+- pay
+```
+ http :8088/payments id="id" 
 ```
 
 

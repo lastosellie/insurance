@@ -58,6 +58,18 @@
                     </v-list-item>
 
 
+                    <v-list-item
+                        class="px-2"
+                        key="payments"
+                        to="/pays/payments"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        Payment
+                    </v-list-item>
+
+
                 </v-list>
             </v-navigation-drawer>
         </div>
@@ -148,6 +160,13 @@ export default {
                 description: '', 
                 key: 'reviews', 
                 route: '/reviews/reviews',
+                ImageUrl: '',
+            },
+            { 
+                title: 'Payment', 
+                description: '', 
+                key: 'payments', 
+                route: '/pays/payments',
                 ImageUrl: '',
             },
             

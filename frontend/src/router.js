@@ -11,6 +11,9 @@ import ClaimReceiptDetail from "./components/listers/ClaimReceiptDetail"
 import ReviewReviewManager from "./components/listers/ReviewReviewCards"
 import ReviewReviewDetail from "./components/listers/ReviewReviewDetail"
 
+import PayPaymentManager from "./components/listers/PayPaymentCards"
+import PayPaymentDetail from "./components/listers/PayPaymentDetail"
+
 
 export default new Router({
     // mode: 'history',
@@ -36,6 +39,17 @@ export default new Router({
                 path: '/reviews/reviews/:id',
                 name: 'ReviewReviewDetail',
                 component: ReviewReviewDetail
+            },
+
+            {
+                path: '/pays/payments',
+                name: 'PayPaymentManager',
+                component: PayPaymentManager
+            },
+            {
+                path: '/pays/payments/:id',
+                name: 'PayPaymentDetail',
+                component: PayPaymentDetail
             },
 
 
